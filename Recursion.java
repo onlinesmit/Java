@@ -9,8 +9,9 @@ public static void main(String[] args) {
     // void print(){
     // System.out.println("Hello recurtion: ");
 
-    for(int i: num){
-            return print(num-1)+;
+     while(num>0)
+     {
+         
+     } 
     }
  }
-}
