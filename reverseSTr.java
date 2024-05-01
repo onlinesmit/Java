@@ -1,26 +1,36 @@
-public class reverseSTr {
-    public static void main(String[] args) {
-        String s = new String("Smit kumar Gupta");
-        Reverse(s);
-        String remSp = removeSpace(s);
-        
-        //System.out.println(rev);
-        System.out.println(remSp);
-    }
-    
-    static String removeSpace(String s){
-        return s.replaceAll("\\s", ""); 
-    }
+import java.util.Scanner;
 
-    static String Reverse(String s){
-        char[] ca = s.toCharArray();
-        for(int i =0, j = s.length()-1; i<j; i++, j-- ){
-                char temp = ca[i];
-                ca[i] = ca[j];
-                ca[j] = temp;
+public class reverseSTr {
+    
+    static String Rev(String s){
+        char[] ch =  s.toCharArray();
+        
+        // Reverse the char array
+        for(int i = 0, j = s.length() - 1; i <= j; i++, j--) {
+            char temp = ch[i];
+            ch[i] = ch[j];
+            ch[j] = temp;
         }
 
-        System.out.println(ca);
-        return s;
+        // Convert the reversed char array back to a string
+        String reversed = new String(ch);
+
+        // Print the reversed string
+        System.out.println(reversed); 
+
+        // Return the rev string without spaces
+        return reversed.replaceAll(" ", "");
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the string: ");
+        String OStr = sc.nextLine();
+
+        System.out.println(Rev(OStr));
+
+        sc.close();
     }
 }
+

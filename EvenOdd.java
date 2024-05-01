@@ -23,9 +23,9 @@ public class EvenOdd {
     }
 
     public static void main(String[] args) {
-        Scanner sc =new Scanner(System.in);
+        Scanner c =new Scanner(System.in);
         System.out.println("Enter the nuber to check: ");
-        int x = sc.nextInt();
+        int x = c.nextInt();
         // EO(x);
 
         if (EO(x)==0) {
@@ -35,5 +35,7 @@ public class EvenOdd {
         {
             System.out.println("Odd: ");
         }
+        c.close();
     }
+
 }

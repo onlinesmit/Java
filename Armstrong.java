@@ -25,5 +25,7 @@ public class Armstrong {
         System.out.println("Enter the number to Check: ");
         int num = sc.nextInt();
         Armstrong1(num);
+
+        sc.close();
     }
 }

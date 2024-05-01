@@ -24,6 +24,8 @@ public class pelindromeNo {
         System.out.println("Enter the number to checking pelindrome or not: ");
         int num = sc.nextInt();
         pelindromeNo1(num);
+
+        sc.close();
     
     }
 }
